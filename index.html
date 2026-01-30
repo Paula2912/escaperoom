@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Escape Room Cumple </title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Fuente pixel retro -->
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="game-container">
+
+    <h1 class="title">ESCAPE ROOM<br>DE RECUERDOS</h1>
+
+    <div class="character-area">
+        <!-- Sprite pixel del personaje -->
+        <img src="assets/images/detective.png" alt="Detective" class="character">
+        <p class="subtitle">Detective [Angy]</p>
+    </div>
+
+    <div class="intro-text">
+        <p>
+            Has sido seleccionada para resolver el misterio
+            de los recuerdos perdidos...
+        </p>
+        <p>
+            Solo una detective legendaria puede escapar.
+        </p>
+    </div>
+
+    <div class="menu-buttons">
+       <button onclick="startGame()">JUGAR</button>
+       <button onclick="goInfo()">INFO</button>
+
+    </div>
+
+</div>
+
+<script src="js/game.js"></script>
+
+</body>
+</html>
