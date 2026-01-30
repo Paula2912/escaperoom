@@ -1,0 +1,66 @@
+.final-container {
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+.final-title {
+    font-size: 14px;
+    color: #facc15;
+    margin-bottom: 15px;
+    animation: glow 1.5s infinite alternate;
+}
+
+/* FOTO FINAL ESPECIAL */
+.memory-photo {
+    width: 65%;
+    max-width: 200px;
+    margin: 12px auto;
+    display: block;
+
+    border: 6px double #facc15;
+    border-radius: 10px;
+
+    box-shadow: 0 0 12px rgba(250, 204, 21, 0.6);
+    image-rendering: pixelated;
+}
+
+.question {
+    font-size: 9px;
+    margin: 20px 0;
+}
+
+/* Botones dorados */
+.options button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 16px;
+
+    font-family: 'Press Start 2P', cursive;
+    font-size: 8px;
+
+    background: #facc15;
+    color: #422006;
+
+    border: 3px solid #ca8a04;
+    cursor: pointer;
+
+    box-shadow: 0 5px #854d0e;
+    transition: all 0.1s ease;
+}
+
+.options button:active {
+    transform: translateY(5px);
+    box-shadow: 0 0 #854d0e;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 5px #facc15; }
+    to { text-shadow: 0 0 15px #facc15; }
+}

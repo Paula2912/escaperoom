@@ -1,0 +1,57 @@
+.final-screen {
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+.victory-title {
+    font-size: 14px;
+    color: #22c55e;
+    margin-bottom: 10px;
+    animation: glow 1.5s infinite alternate;
+}
+
+.detective {
+    width: 120px;
+    margin: 10px auto;
+    display: block;
+    image-rendering: pixelated;
+}
+
+.report {
+    font-size: 7px;
+    line-height: 1.6;
+    margin: 15px 0;
+    color: #86efac;
+    white-space: pre-line;
+}
+
+.restart {
+    padding: 14px;
+    width: 100%;
+
+    font-family: 'Press Start 2P', cursive;
+    font-size: 8px;
+
+    background: #22c55e;
+    color: #022c22;
+
+    border: 3px solid #15803d;
+    cursor: pointer;
+
+    box-shadow: 0 5px #14532d;
+}
+
+.restart:active {
+    transform: translateY(5px);
+    box-shadow: 0 0 #14532d;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 5px #22c55e; }
+    to { text-shadow: 0 0 15px #22c55e; }
+}

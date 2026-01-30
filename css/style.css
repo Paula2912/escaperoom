@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0f172a;
+    color: #e5e7eb;
+    font-family: 'Press Start 2P', cursive;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor principal tipo consola */
+.game-container {
+    width: 95%;
+    max-width: 420px;
+    background: #020617;
+    border: 6px solid #22c55e;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 25px #22c55e;
+    border-radius: 10px;
+}
+
+/* Título */
+.title {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #22c55e;
+    margin-bottom: 20px;
+}
+
+/* Área personaje */
+.character-area {
+    margin: 15px 0;
+}
+
+.character {
+    width: 120px;
+    image-rendering: pixelated;
+    animation: float 2s infinite ease-in-out;
+}
+
+.subtitle {
+    font-size: 8px;
+    margin-top: 10px;
+    color: #86efac;
+}
+
+/* Texto intro */
+.intro-text {
+    font-size: 8px;
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+/* Botones */
+.menu-buttons button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 8px;
+    background: #22c55e;
+    border: none;
+    color: #022c22;
+    cursor: pointer;
+    transition: 0.15s;
+    box-shadow: 0 4px #15803d;
+}
+
+.menu-buttons button:active {
+    transform: translateY(4px);
+    box-shadow: 0 0 #15803d;
+}
+
+/* Animación flotante */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-6px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Responsive móvil pequeño */
+@media (max-width: 350px) {
+    .title { font-size: 12px; }
+    .intro-text { font-size: 7px; }
+    .menu-buttons button { font-size: 7px; }
+}
